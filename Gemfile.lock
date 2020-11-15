@@ -206,8 +206,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  better_errors
-  binding_of_caller
+  better_errors (~> 2.9, >= 2.9.1)
+  binding_of_caller (~> 0.8.0)
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)

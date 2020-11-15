@@ -1,5 +1,9 @@
 body {
-    background: mistyrose;
+    background: #976331;
     text-align: center;
-    margin: 60px;
+}
+
+.container {
+    margin: 50px;
+    padding: auto;
 }
