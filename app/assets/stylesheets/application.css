@@ -7,6 +7,16 @@ body {
     background: #b6b6b6;
 }
 
+.form-control-input {
+    width: 30px;
+    height: 30px;
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+}
+
 .table-curved {
    border-collapse: separate;
    border: thin #ccc 1px;
