@@ -19,6 +19,8 @@ end
 group :development do
   gem 'better_errors', '~> 2.9', '>= 2.9.1'
   gem 'binding_of_caller', '~> 0.8.0'
+  gem 'guard-livereload', '~> 2.5', require: false
+
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.2'
   gem 'spring'

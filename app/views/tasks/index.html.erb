@@ -1,9 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Tasks List</h1>
+<h1>Tasks❦List</h1>
 
-<table>
-  <thead>
+<div class="panel panel-default">
+  <table class="table table-curved table-outline-success table-striped table-hover">
+  <thead class="thead-dark">
     <tr>
       <th>First item</th>
       <th>Created</th>
@@ -20,14 +21,15 @@
         <td><%= task.created %></td>
         <td><%= task.title %></td>
         <td><%= task.content %></td>
-        <td><%= link_to 'Show', task %></td>
-        <td><%= link_to 'Edit', edit_task_path(task) %></td>
-        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', task, class: 'btn btn-outline-info' %></td>
+        <td><%= link_to 'Edit', edit_task_path(task), class: 'btn btn-outline-warning' %></td>
+        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-outline-danger' %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+</div>
 
 <br>
 
-<%= link_to 'New Task', new_task_path %>
+<%= link_to 'New Task', new_task_path, class: 'btn btn-outline-dark btn-block' %>

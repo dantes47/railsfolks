@@ -3,7 +3,34 @@ body {
     text-align: center;
 }
 
-.container {
-    margin: 50px;
-    padding: auto;
+.jumbotron {
+    background: #b6b6b6;
+}
+
+.table-curved {
+   border-collapse: separate;
+   border: thin #ccc 1px;
+   border-radius: 4px;
+   border-left: 1px;
+   border-top: 1px;
+}
+.table-curved > thead:first-child > tr:first-child > th {
+    border-bottom: 1px;
+    border-top: thin #ccc 1px;
+}
+.table-curved td, .table-curved th {
+    border-left: 1px thin #ccc;
+    border-top: 1px thin #ccc;
+}
+.table-curved > :first-child > :first-child > :first-child {
+    border-radius: 4px 0 0 0;
+}
+.table-curved > :first-child > :first-child > :last-child {
+    border-radius: 0 4px 0 0;
+}
+.table-curved > :last-child > :last-child > :first-child {
+    border-radius: 0 0 0 4px;
+}
+.table-curved > :last-child > :last-child > :last-child {
+    border-radius: 0 0 4px 0;
 }
