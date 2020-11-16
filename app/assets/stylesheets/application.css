@@ -17,6 +17,10 @@ body {
     height: 20px;
 }
 
+.h {
+  color: #ec0548;
+}
+
 .table-curved {
    border-collapse: separate;
    border: thin #ccc 1px;
