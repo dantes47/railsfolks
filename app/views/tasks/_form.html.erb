@@ -2,7 +2,6 @@
   <% if task.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(task.errors.count, "error") %> prohibited this task from being saved:</h2>
-
       <ul>
         <% task.errors.full_messages.each do |message| %>
           <li><%= message %></li>
@@ -10,25 +9,26 @@
       </ul>
     </div>
   <% end %>
-
   <div class="field form-group">
     <% form.label :first_item %>
     <%= form.text_field :first_item, class: "form-control", placeholder: "First item" %>
     <% form.label :created %>
-    <br>
-    <%= form.check_box :created, class: "form-control-input", type: "checkbox" %>
+    <p></p>
+    <%= form.check_box :created, class: "form-check-label", type: "checkbox" %>
   </div>
   <div class="field form-group">
     <% form.label :title %>
     <%= form.text_field :title, class: "form-control", placeholder: "Title" %>
   </div>
-
   <div class="field form-group">
     <% form.label :content %>
     <%= form.text_area :content, class: "form-control", rows: "13", placeholder: "Content" %>
   </div>
-  <br>
+  <div class="field form-group">
+    <% form.label :title %>
+    <%= form.number_field :user_id, class: "form-control", value: current_user.id, id: :task_user_id, type: :hidden %>
+  </div>
   <div class="actions">
-    <%= form.submit class: "btn btn-secondary" %>
+    <%= form.submit class: "btn btn-outline-primary" %>
   </div>
 <% end %>
