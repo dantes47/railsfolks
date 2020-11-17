@@ -1,24 +1,15 @@
-# README
+# Folks Rails Test Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Testing App for RubyGarage.org
 
-Things you may want to cover:
+# pub. access to app for checking:
+  - login:    dantes817@yahoo.com
+  - password: password
 
-* Ruby version
+#  ================================
 
-* System dependencies
+  - login_2:    dantes817@gmail.com
+  - password_2: password
 
-* Configuration
+# Have Fun..)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
