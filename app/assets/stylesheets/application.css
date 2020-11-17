@@ -21,6 +21,25 @@ body {
   color: #ec0548;
 }
 
+a {
+  color: #c94c4c;
+}
+
+#link {
+  color: #80ced6;
+}
+
+.footer {
+  position: fixed;
+  border-radius: 2px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3e4444;
+  color: white;
+  text-align: center;
+}
+
 .table-curved {
    border-collapse: separate;
    border: thin #ccc 1px;
