@@ -8,21 +8,28 @@
       <th>Created</th>
       <th>Title</th>
       <th>Content</th>
+      <th>User ID</th>
       <th colspan="3">CRUD⧁Area</th>
     </tr>
   </thead>
 
   <tbody>
     <% @tasks.each do |task| %>
+      <!-- To whom, who wants to see All the Users Task-Tables: Uncomment those logic bellow | Dannyⓒ -->
+
+      <% #if task.user == current_user %>
       <tr>
         <td><%= task.first_item %></td>
         <td><%= check_box_tag 'task', '1', task.created, :disabled => true, class: 'check' %></td>
         <td><%= task.title %></td>
         <td><%= task.content %></td>
+        <td><%= task.user_id %></td>
         <td><%= link_to 'Show', task, class: 'btn btn-outline-info' %></td>
         <td><%= link_to 'Edit', edit_task_path(task), class: 'btn btn-outline-warning' %></td>
         <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-outline-danger' %></td>
       </tr>
+      <% #end %>
+
     <% end %>
   </tbody>
 </table>
